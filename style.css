@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+:root{
+    --purple:#b029ff;
+    --blue:#2974ff;
+    --gradient:linear-gradient(90deg, var(--blue), var(--purple));
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto Slab', serif;
+}
+body{
+	background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.infoform{
+	padding: 25px;
+	border-radius: 10px;
+	width: 500px;
+    height: 580px;
+    background:transparent;
+    border: 2px solid #fbcfff;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 5px #000000;
+    margin-top: 70px;
+}
+h2{
+	text-align: center;
+	font-size: 30px;
+    color: #7120a0;
+    text-shadow: 1px 0 3px #ffffff;
+	letter-spacing: 2px;
+	font-weight:bolder;
+}
+form{
+	margin-top: 35px;
+}
+form .input{
+	margin-bottom: 15px;
+}
+form .input label{
+    font-size: 20px;
+	display: block;
+	margin-bottom: 3px;
+	color: #8b37bc;
+    text-shadow: 0 0 3px #ffffff;
+    font-weight: 550;
+}
+form .name{
+	display: flex;
+	justify-content: space-between;   
+}
+form .name input{
+	width: 215px;
+}
+form  input{
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #fbcfff;
+    box-shadow: 0 0 2px #000000;
+	padding: 10px;
+}
+form .submit, .clear{
+	width: 100%;
+	background:var(--gradient);
+    font-size: 15px;
+    color: #ffffff;
+    text-shadow: 0 0 3px #000000;
+    box-shadow: 0 0 2px #000000;
+    font-weight: bold;
+	padding: 10px;
+    margin-top: 5px;
+	border-radius: 3px;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+form .submit:hover, .clear:hover{
+	background: #a757c4;
+}
